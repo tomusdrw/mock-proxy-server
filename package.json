@@ -1,11 +1,12 @@
 {
-  "name": "mocking-server",
+  "name": "mock-proxy-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon app",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint",
+    "lint": "semistandard"
   },
   "author": "Tomusdrw <tomusdrw@gmail.com>",
   "license": "MIT",
@@ -18,6 +19,7 @@
     "serve-static": "^1.9.3"
   },
   "devDependencies": {
-    "nodemon": "^1.8.1"
+    "nodemon": "^1.8.1",
+    "semistandard": "^7.0.4"
   }
 }
